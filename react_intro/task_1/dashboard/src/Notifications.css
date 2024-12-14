@@ -1,6 +1,4 @@
 .Notifications {
-    border: dotted;
-    border-color: crimson;
-    padding-left: 1rem;
-    margin-bottom: 1rem;
+	border: 3px solid var(--holberton-red);
+	padding: 6px 12px;
 }
