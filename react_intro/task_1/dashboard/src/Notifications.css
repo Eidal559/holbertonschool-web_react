@@ -1,4 +1,12 @@
-.Notifications {
-	border: 3px solid var(--holberton-red);
-	padding: 6px 12px;
-}
+.notifications {
+	background-color: #fff8f8;
+	border: 1px solid #e1484c;
+	padding: 10px;
+	margin: 10px;
+  }
+  
+  .notifications p {
+	color: #e1484c;
+	font-weight: bold;
+  }
+  
