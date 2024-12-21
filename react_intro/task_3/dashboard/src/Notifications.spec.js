@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import Notifications from './Notifications'; // Adjust the import path if necessary
+import '@testing-library/jest-dom';
+import Notifications from './Notifications'; // Adjust the import path if needed
 
 describe('Notifications Component Tests', () => {
   test('checks the existence of the notifications title', () => {
