@@ -1,9 +1,9 @@
+// task_2/dashboard/src/App.jsx
 import React from 'react';
-import './App.css'; // Make sure the path is correct
-import logo from './assets/holberton-logo.jpg'; // Adjust the path as needed
+import './App.css';
 import { getCurrentYear, getFooterCopy } from './utils';
 import Notifications from './Notifications';
-
+import logo from './assets/holberton-logo.jpg';
 
 function App() {
   return (
@@ -15,9 +15,18 @@ function App() {
       </header>
       <div className="App-body">
         <p>Login to access the full dashboard</p>
+        <div>
+          <label htmlFor="email">Email:</label>
+          <input data-testid="input-element" type="email" id="email" name="email" />
+        </div>
+        <div>
+          <label htmlFor="password">Password:</label>
+          <input data-testid="input-element" type="password" id="password" name="password" />
+        </div>
+        <button>OK</button>
       </div>
       <footer className="App-footer">
-        <p>{getFooterCopy(true)} - Copyright {getCurrentYear()} - Holberton School</p>
+        <p>Copyright {getCurrentYear()} {getFooterCopy(true)}</p>
       </footer>
     </div>
   );

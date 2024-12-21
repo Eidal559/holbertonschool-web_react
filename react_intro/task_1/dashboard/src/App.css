@@ -1,45 +1,60 @@
-:root {
-  --holberton-red: #e1484c;
-}
-
-body {
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-div {
-  padding: 2px 8px;
-}
-
+/* General App styling */
 .App {
-  position: relative;
+  text-align: left;
   min-height: 100vh;
-}
-
-.App-header {
   display: flex;
-  flex-direction: row;
-  justify-content: left;
-  border-bottom: 3px solid var(--holberton-red);
+  flex-direction: column;
+  justify-content: space-between; /* Ensures footer sticks to bottom */
+  font-family: Arial, sans-serif; /* or any other font you prefer */
+  color: #e1003c;
 }
 
-.App-header h1 {
-  margin: auto auto auto 0;
-  color: var(--holberton-red);
+/* Header styling */
+.App-header {
+  background-color: white;
+  padding: 20px; /* Adjust padding as necessary */
+  border-bottom: 3px solid #e1003c; /* Keeps the red line below the header */
+  display: flex;
+  flex-direction: row; /* Aligns children in a row */
+  align-items: center; /* Vertically center aligns items */
+  justify-content: flex-start; /* Aligns content to the left */
+}
+
+.App-header img {
+  max-height: 100px; /* Adjust based on your design needs */
+  margin-right: 20px; /* Adds space between the logo and the text */
+}
+
+h1 {
+  font-size: 24px; /* Adjust font size as necessary */
+  margin: 0; /* Removes default margin */
+}
+
+
+/* Logo styles - ensure it doesn't stretch */
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Body styling */
+.App-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: left; /* Ensures content in the body is centered */
+  align-items: left; /* Aligns content to the left */
 }
 
 .App-body p {
-  margin: 48px 0 0 32px;
+  color: #000000;
 }
 
+/* Footer styling */
 .App-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.App-footer p {
   text-align: center;
-  border-top: 3px solid var(--holberton-red);
-  padding: 16px 0;
+  background-color: white;
+  color: #000000;
+  padding: 10px;
+  border-top: 3px solid #e1003c; /* Red top border */
 }
