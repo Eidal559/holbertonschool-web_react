@@ -1,25 +1,29 @@
-import React from "react";
-import { shallow } from "enzyme";
-import App from "./App";
+import React from 'react';
+import App from './App';
+import { shallow } from 'enzyme';
+import { expect } from 'chai'
 
-describe("<App />", () => {
-  it("App renders without any errors", () => {
-    const wrapper = shallow(<App />);
-    expect(wrapper.exists()).toEqual(true);
-  });
 
-  it("verify that App renders a div with the class App-header", () => {
-    const wrapper = shallow(<App />);
-    expect(wrapper.find("div.App-header")).toHaveLength(1);
-  });
+describe('testing the App component', () => {
 
-  it("verify that App renders a div with the class App-body", () => {
-    const wrapper = shallow(<App />);
-    expect(wrapper.find("div.App-body")).toHaveLength(1);
-  });
+    beforeEach(() => {
+        const wrapper = shallow(<App />);
+    });
 
-  it("verify that App renders a div with the class App-footer", () => {
-    const wrapper = shallow(<App />);
-    expect(wrapper.find("div.App-footer")).toHaveLength(1);
-  });
+    it("test that App renders without crashing", () => {
+        expect(wrapper).to.not.be.an('undefined')
+    });
+
+    it("verify that App renders a div with the class App-header", () => {
+        expect(wrapper.find('.App-header')).to.have.lengthOf(1);
+    });
+
+    it("verify that App renders a div with the class App-body", () => {
+        expect(wrapper.find('.App-body')).to.have.lengthOf(1);
+    });
+
+    it("verify that App renders a div with the class App-footer", () => {
+        expect(wrapper.find('.App-footer')).to.have.lengthOf(1);
+    });
+
 });

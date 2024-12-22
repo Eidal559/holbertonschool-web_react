@@ -1,29 +1,27 @@
-import React from "react";
-import "./App.css";
-import holberton_logo from "../assets/holberton_logo.jpg";
-import { getFullYear, getFooterCopy } from "../utils/utils";
-
+import logo from './logo.jpg';
+import './App.css';
+import { getFullYear, getFooterCopy } from '../utils';
 
 function App() {
   return (
-    <>
-      <div className="App-header">
-        <img src={holberton_logo} alt="Holberton Logo"/>
+    <div className="container">
+      <header className="App-header">
+        <img src={logo} alt=""holbertonLogo />
         <h1>School dashboard</h1>
-      </div>
-      <div className="App-body">
+      </header>
+      <body className='App-body'>
         <p>Login to access the full dashboard</p>
-        <label htmlFor="fname">Email:</label>
-        <input type="email" id="email" />
-        <label htmlFor="lname">Password:</label>
+        <label htmlFor="email" id='emaill'>Email</label>
+        <input type="email" id='email'/>
+        <label htmlFor="password" id='passwordd'>Password</label>
         <input type="password" id="password" />
         <button>OK</button>
-      </div>
-      <div className="App-footer">
-        <p>Copyright {getFullYear()} - {getFooterCopy(true)}</p>
-      </div>
-    </>
-  );
+      </body>
+      <footer className="App-footer">
+        <p>Copyright {getFullYear()} - {getFooterCopy(1)}</p>
+      </footer>
+    </div>
+  )
 }
 
-export default App;
+export default App

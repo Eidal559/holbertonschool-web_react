@@ -1,16 +1,23 @@
 .Notifications {
-    border: 3px dashed #e14852;;
-    padding: 1em;
+    border: 2px dotted #e70505;
+    padding: 2rem;
 }
 
-.Notifications button img {
-    width: 20px;
+.Notifications p {
+    font-size: 1.5rem;
 }
 
-[data-priority='default'] {
+li[data-priority="default"] {
     color: blue;
+    font-size: 1.2rem;
 }
 
-[data-priority='urgent'] {
+li[data-priority="urgent"] {
     color: red;
+    font-size: 1.2rem;
+}
+
+img {
+    height: 20px;
+    cursor: pointer;
 }

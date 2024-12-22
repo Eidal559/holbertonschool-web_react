@@ -1,27 +1,64 @@
-:root {
-  --principal-color: #e14852;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .App-header {
-  display: flex;
-  color: var(--principal-color);
-  align-items: center;
-  border-bottom: 4px solid var(--principal-color);
-
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid #e70505;
 }
 
 .App-header img {
-  width: 200px;
-  height: 200px;
+    height: 25vh;
+}
+
+.App-header h1 {
+    color: #e70505;
+    font-size: 2.5rem;
 }
 
 .App-body {
-  margin: 50px 0 350px 60px;
+    height: 70vh;
+}
+
+.App-body p {
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    margin-top: 5rem;
 }
 
 .App-footer {
-  display: flex;
-  justify-content: center;
-  border-top: 4px solid var(--principal-color);
-  font-style: italic;
+    height: 10vh;
+    border-top: 4px solid #e70505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#emaill, #passwordd {
+    margin-left: 3rem;
+    font-size: 1.5rem;
+}
+
+#email, #password {
+    margin-left: 1rem;
+}
+
+
+.App-footer p {
+    font-size: 1.2rem;
+}
+
+button {
+    margin-left: 2rem;
+    background-color: white;
+    cursor: pointer;
 }
